@@ -5,11 +5,11 @@
 class Waxctl < Formula
   desc ""
   homepage "https://github.com/bytewax/waxctl-downloads"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
-    url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.0/waxctl_0.6.0_darwin_all.tar.gz"
-    sha256 "f9493e797f91d9f10c4717f178ea2adbd3dad82904252bc6a3af16efccd957da"
+    url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.1/waxctl_0.6.1_darwin_all.tar.gz"
+    sha256 "03efca6508e34a6a95f4875b61c18235a2d5b87f3527b8224f7e1a83c7d4509e"
 
     def install
       bin.install "waxctl"
@@ -18,16 +18,16 @@ class Waxctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.0/waxctl_0.6.0_linux_arm64.tar.gz"
-      sha256 "fd286aeb4b8c4ce46a8eff6f0ab946d4d4139d08eed12658f957596e92a08416"
+      url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.1/waxctl_0.6.1_linux_arm64.tar.gz"
+      sha256 "de4726d44638b6773b93bde3f300bfd656819a8e7be9897d727ff239028fa4b4"
 
       def install
         bin.install "waxctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.0/waxctl_0.6.0_linux_amd64.tar.gz"
-      sha256 "8ae058d0d0663d775e1ae0f3daf0cd39f7ce5fc7051cb0f3b1e4acb0beed35f6"
+      url "https://github.com/bytewax/waxctl-downloads/releases/download/v0.6.1/waxctl_0.6.1_linux_amd64.tar.gz"
+      sha256 "40f3aa535dfa6cfa87df2d4eb9b2714330f38d152a0f8c68a01e1049f2fae4a6"
 
       def install
         bin.install "waxctl"
